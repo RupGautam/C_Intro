@@ -32,16 +32,22 @@ int main(){
    printf("    Your HP:  %d Enemy HP:   %d\n\n\n", pHP, eHP);
 
    printf("1 - Attack\n 2 - Magic\n");
-   printf("Select your move:  %d", select);
+   printf("Select your move:  ");
    scanf("%d", &select);
 
 
       if(select == 1){ //if user selects 1 we attack
-          eAttackPower = (float) pStrength / eDefense;
-          eHP = ((float) (eHP - (eAttackPower * 5)));
-          printf("Health: %lf\n", eHP );
-          printf("Attack: %lf\n", eAttackPower );
+            eAttackPower = (float) pStrength / eDefense;
+            eHP = ((float) (eHP - (eAttackPower * 5)));
+
+            printf("Health: %d\n", (int)eHP );
+            printf("Attack: %d\n", (int)eAttackPower );
 }
+else if (select == 2){
+  printf("You choose option: 2\n");
+
+}
+
 
 return 0;
 
