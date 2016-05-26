@@ -13,7 +13,7 @@
         const int eDefense = 40;
         const int eIntelligence = 25;
         int eHP = 10;
-
+        float eAttackPower, pAttackPower;
         //selection
         int select;
 
@@ -36,7 +36,7 @@
 
             if (select == 1) { //if user selects 1 we attack
 
-                float eAttackPower, pAttackPower;
+
 
                 // enemy side calculation
                 eAttackPower = (float) pStrength / eDefense;
@@ -65,7 +65,7 @@
                 float emagicHP, pmagicHP;
 
                 emagicHP = (float) pIntelligence / eIntelligence;
-                pmagicHP = (float) eIntelligence / pIntelligence;
+                pmagicHP = (float) eStrength / pDefense;
 
                 eHP = (int) eHP - (emagicHP * 5);
                 pHP = (int) pHP - (pmagicHP * 5);
