@@ -3,6 +3,7 @@
 // limits.c
 // Rup Gautam 
 
+#include <stdio.h>
 
   int main(void)
     {
@@ -18,6 +19,9 @@
                 scanf("%lf", &x);
                 printf("print second dec number: \n");
                 scanf("%lf", &y);
+
+                ij = i * j;
+                xy = x * y;
                 printf("Total: %d\n", ij);
                 printf("Total dec: %lf\n", xy);
 
