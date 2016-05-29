@@ -6,27 +6,27 @@
 //  Copyright @ 2016 Rup Gautam. All rights reserved.
 //
 # define _CRT_SECURE_NO_WARNINGS
-# include < stdio.h >
+# include <stdio.h>
 
 int main(void)
 
 {
 
-    // player stats varibles 
+    // player stats varibles
 
     int playerStrength = 10;
     int playerDefense = 20;
     int playerIntelligence = 40;
     int playerHP = 10;
 
-    // enemy stats varibles 
+    // enemy stats varibles
 
     int enemyStrength = 30;
     int enemyDefense = 40;
     int enemyIntelligence = 25;
     int enemyHP = 10;
 
-    // user selection 
+    // user selection
     int selector;
 
     printf("Battle Start!\n");
@@ -41,7 +41,7 @@ int main(void)
 
         printf("Select your move:");
 
-        scanf_s("%d", & selector);
+        scanf("%d", & selector);
 
         if (selector == 1) {
 
@@ -49,7 +49,7 @@ int main(void)
             enemyAttackPower = ((float) playerStrength / enemyDefense);
             playerAttackPower = ((float) enemyStrength / playerDefense);
 
-            // test 
+            // test
             // printf("%f, %f\n", enemyAttackPower, playerAttackPower);
             enemyHP = ((int) enemyHP - enemyAttackPower * 5);
             playerHP = ((int) playerHP - playerAttackPower * 5);
@@ -62,7 +62,6 @@ int main(void)
             printf("You Won!\n");
 
         else {
-
             printf("The enemy attacked you!\n");
             if (playerHP < 1)
                 printf("You Died!\n");
