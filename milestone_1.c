@@ -95,9 +95,9 @@ void displayBoard(unsigned int size)
 
         max_index--;
         int j=0;
-        //this part of code used for column boxe below box no 1 and last box in row 1 they are less size-2 because we already insert row 1 and will insert last row at the end
+
         for(j=0; j<size-2; j++)
-        {  //in every case there would be max 2 boxes in 2nd row and so on until and unless we did not reach the last row
+
           // upper part of boxes
             for(i=0; i<2; i++)
             {
@@ -152,7 +152,7 @@ void displayBoard(unsigned int size)
 
 
         }
-        //LAst row of box
+        //Last row of box
         //upper lines of all the boxes using this loop in last row
         for(i=0; i<size; i++)
     {
@@ -164,7 +164,7 @@ void displayBoard(unsigned int size)
 
     for(i=0; i<size; i++)
     {
-        printf("| %c",getTileType(max_index));
+        printf("| %c", getTileType(max_index));
         printf(" |");
         printf(" ");
         max_index--;
