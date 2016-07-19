@@ -1,10 +1,12 @@
+// Author:
+// Rup Gautam <rupngautam@gmail.com>
 //
-//  main.c
-//  IPC Lab_3
+// Copyright (c) 2016 RupGautam
 //
-//  Created by Rup Gautam on 2016-02-8.
-//  Copyright @ 2016 Rup Gautam. All rights reserved.
-//
+//  I declare that the attached assig nment is wholly my own work in accordance with Seneca Academic Policy.
+//  No part of this assignment has been copied manually or electronically from anyother source (including web sites)
+//  or distributed to other students.
+//  Name   Rup Gautam   Student ID  033838152
 # define _CRT_SECURE_NO_WARNINGS
 # include <stdio.h>
 
