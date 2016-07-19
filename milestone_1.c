@@ -91,7 +91,8 @@ void displayBoard(unsigned int size)
     if(size>1)
     { //calculating the max index number to be used for box at the last
 
-        int max_index=size*size-(((size-2)*(size-2)));
+        int max_index;
+        max_index = size*size-(((size-2)*(size-2)));
 
         max_index--;
         int j=0;
@@ -183,4 +184,3 @@ void displayBoard(unsigned int size)
     }
 
 
-}
